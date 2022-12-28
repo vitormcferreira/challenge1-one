@@ -20,7 +20,11 @@ function criptografar(str) {
 
 function descriptografar(str) {
   let temp = str;
-  mapping.reverse().forEach(([k, v]) => {
+
+  // .slice(0) para criar um novo array e não editar o original
+  const mappingInvertido = mapping.slice(0).reverse();
+  
+  mappingInvertido.forEach(([k, v]) => {
     temp = temp.replaceAll(v, k);
   });
 
