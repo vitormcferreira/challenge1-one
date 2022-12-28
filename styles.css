@@ -50,6 +50,7 @@ main {
   justify-content: space-between;
   gap: 30px;
   flex-grow: 1;
+  padding: 20px;
 }
 
 .left form {
