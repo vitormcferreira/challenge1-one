@@ -6,25 +6,22 @@ const mapping = [
   ['u', 'ufat'],
 ];
 
-function criptografar(str) {
-  // TODO: DRY
-  // O código desta função é muito parecido com a função descriptografar
-
+function applyMapping(map, str, fn) {
   let temp = str;
-  mapping.forEach(([k, v]) => {
-    temp = temp.replaceAll(k, v);
+  map.forEach(([k, v]) => {
+    const [from, to] = fn(k, v);
+    temp = temp.replaceAll(from, to);
   });
   
   return temp;
 }
 
-function descriptografar(str) {
-  let temp = str;
-  mapping.reverse().forEach(([k, v]) => {
-    temp = temp.replaceAll(v, k);
-  });
+function criptografar(str) {
+  return applyMapping(mapping, str, (k, v) => [k, v]);
+}
 
-  return temp;
+function descriptografar(str) {
+  return applyMapping(mapping.reverse(), str, (k, v) => [v, k]);
 }
 
 const textarea = document.querySelector('textarea');
