@@ -1,0 +1,22 @@
+@media (max-width: 1440px) {
+  body {
+    max-width: 768px;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  .right form {
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  
+  .left {
+    width: auto;
+  }
+
+  .sem-mensagem img {
+    display: none;
+  }
+}

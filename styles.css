@@ -50,7 +50,6 @@ main {
   justify-content: space-between;
   gap: 30px;
   flex-grow: 1;
-  width: 100px;
 }
 
 .right form {
