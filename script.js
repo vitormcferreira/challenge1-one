@@ -44,8 +44,8 @@ function textAreaVazio() {
 }
 
 function exibirAvisoDeNenhumaMensagemEncontrada() {
-  semMensagem.style.display = 'flex';
-  mensagem.style.display = 'none';
+  semMensagem.classList.remove('escondido');
+  mensagem.classList.add('escondido');
 }
 
 function inserirMensagem(text) {
@@ -53,8 +53,8 @@ function inserirMensagem(text) {
 }
 
 function exibirMensagem() {
-  semMensagem.style.display = 'none';
-  mensagem.style.display = 'flex';
+  semMensagem.classList.add('escondido');
+  mensagem.classList.remove('escondido');
 }
 
 function tentar(criptografarOuDescriptografar) {

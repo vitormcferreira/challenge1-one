@@ -128,11 +128,14 @@ form div {
   height: 100%;
   font-weight: 400;
   font-size: 24px;
-  display: none;
   word-wrap: break-word;
 }
 
 #resultado {
   flex-grow: 1;
   overflow-y: auto;
+}
+
+.escondido {
+  display: none;
 }
