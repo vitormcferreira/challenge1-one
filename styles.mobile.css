@@ -1,0 +1,9 @@
+@media (max-width: 768px) {
+  body {
+    max-width: 375px;
+  }
+
+  form div {
+    flex-direction: column;
+  }
+}
