@@ -43,8 +43,8 @@ main {
   height: 100%;
 }
 
-/* RIGHT */
-.right {
+/* LEFT */
+.left {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -52,7 +52,7 @@ main {
   flex-grow: 1;
 }
 
-.right form {
+.left form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -97,8 +97,8 @@ form div {
   gap: 20px;
 }
 
-/* LEFT */
-.left {
+/* RIGHT */
+.right {
   display: flex;
   flex-direction: column;
   justify-content: center;
