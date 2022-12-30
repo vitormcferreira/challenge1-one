@@ -28,6 +28,7 @@ p {
 }
 
 button, input {
+  background: var(--main-bg-color);
   color: var(--dark-blue);
   padding: 24px;
   width: 100%;
@@ -36,11 +37,28 @@ button, input {
   font-size: 16px;
   margin-top: 10px;
   cursor: pointer;
+  transition: all 200ms;
+}
+
+button:hover, input:hover {
+  background: #cee1f8;
+}
+
+button:active, input:active {
+  background: #b5ceee;
 }
 
 .dark-button {
   color: white;
   background: var(--dark-blue);
+}
+
+.dark-button:hover {
+  background: #082649;
+}
+
+.dark-button:active {
+  background: #061d38;
 }
 
 main {
